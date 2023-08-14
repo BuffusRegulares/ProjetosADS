@@ -4,6 +4,12 @@
     left: 6%;
     transform: translate(-50%, -50%);
   }
+
+  .backgroud {
+
+    background-color: black;
+    color: #8efa00;
+  }
   
   a{
     display: block;
@@ -13,8 +19,8 @@
     font-size: 18px;
     font-family: sans-serif;
     text-decoration: none;
-    color: #ff0000;
-    border: 2px solid #ec0000;
+    color: #51ff00;
+    border: 2px solid #19b821;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
