@@ -1,0 +1,17 @@
+use eleicoes_2022;
+
+#1)
+select  nm_candidato from tb_candidatos where sq_candidato  IN ( select sq_candidato from  tb_bens_candidatos where vlr_bem_candidato  > 20000000);
+
+select 
+	(select nm_candidato  from tb_candidatos c where c.sq_candidato = b.sq_candidato) Nomes_candidatos,
+    vlr_bem_candidato,
+    ds_bem_candidato
+from tb_bens_candidatos b
+where vlr_bem_candidato > 20000000;
+
+
+#2)
+select sum(qt_votos), sq_candidato,
+(select  nm_candidato from tb_candidatos c where c.sq_candidato = b.sq_candidato) Nomes_candidatos from 
+tb_boletins_urnas b group by nome;
