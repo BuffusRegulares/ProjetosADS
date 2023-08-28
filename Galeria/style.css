@@ -62,7 +62,7 @@ footer{
     font-size: 28px;
     color: #FFFFFF;
     padding: 5px;
-    width: 500px;
+    width: 2000px;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
@@ -84,6 +84,43 @@ footer{
   }
   
   .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  
+
+  .button2 {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #ffffff;
+    padding: -10px;
+    width: 8 00px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button2:after {
+    content: "";
+    background: #f1f1f1;
+    display: ruby-base;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button2:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
